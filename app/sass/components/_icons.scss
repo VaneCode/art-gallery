@@ -1,3 +1,11 @@
 #burger-icon{
     --fa-primary-color:var(--dark-color);
 }
+
+hr {
+    margin: 1rem auto 3rem;
+    background-color: var(--orange-color);
+    width: 2.5rem;
+    height: 1px;
+    border: none;
+  }

@@ -1,0 +1,39 @@
+#art-genres{
+    background-color: var(--dark-color);
+    width: 100%;
+    background-image: url(../images/patern.png);
+    background-size: 2rem 2rem;
+    background-repeat: repeat;
+    align-items: center;
+    color: var(--white-color);
+    padding: 3rem;
+}
+
+#art-genres ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  #art-genres li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+  }
+  
+  #art-genres li:hover {
+    border-style: solid;
+    border-color: var(--color-white);
+    border-width: 1px;
+  }
+  
+  #art-genres i {
+    font-size: 2rem;
+  }
+
+  #art-genres h4{
+    color: var(--orange-color);
+  }

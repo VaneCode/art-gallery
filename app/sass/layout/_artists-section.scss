@@ -1,0 +1,20 @@
+.hide-artist-li{
+    display: none;
+}
+
+.artist-photo-frame{
+    z-index: 0;
+    background-image: repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
+    background-position: top left, 4px 4px;
+    background-size: 1rem 1rem;
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+}
+
+#artist-photo img{
+    position: relative;
+    z-index:100;
+}
+

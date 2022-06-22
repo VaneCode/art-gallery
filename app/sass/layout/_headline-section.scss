@@ -1,35 +1,10 @@
-header{
-    width: 100%;
+#headline {
+    flex-direction: column;
     background-image: url("../images/headline-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: stretch;
 }
-
-#header-bar{
-    display: none;
-}
-
-nav ul{
-    background-color: transparent;
-}
-
-.mobile-menu{
-    display: none;
-}
-
-#headline {
-    flex-direction: column;
-    margin: 2rem 0;
-    align-items: center;
-}
-
-#headline .div-container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
 
 #headline h1 {
     background-image: url('../images/h1-bg.jpg');
@@ -48,24 +23,20 @@ nav ul{
 }
 
 #headline h3 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 900;
     font-family: var(--font-title);
-    color: var(--dark-color);
-    text-align: left;
 }
 
 .intro-p {
     background-color: var(--white-color);
-    padding: 1rem;
+    padding: 1.5rem;
+    max-width: 38rem;
     border: 1px solid --grey-color;
     font-size: 1.3rem;
+    margin: 1.5rem 0;
 }
 
 #headline p {
     font-size: 1.3rem;
-    text-align: left;
 }
-
-
-

@@ -42,25 +42,25 @@
                 </li>
             </ul>
         </nav>
-    </header>
-    <!--Main-->
-    <main>
         <!--Headline section-->
-        <section>
-            <div>
-                <h2>Welcome to the art</h2>
+        <section id="headline">
+            <div class="div-container">
+                <h2>Welcome to the art!</h2>
                 <h1>EVOCATIVE ARTWORKS</h1>
-            </div>
-            <div>
-                <p>A space for the expression of the world through art.</p>
-            </div>
-            <div>
-                <p>Open daily from 9:00 to 6:00</p>
+                <div class="intro-p">
+                    <p>A space for the expression of the world through art.
+                     Where you can find just the art you love.
+                    </p>
+                </div>
+                <h3>Open daily from 9:00 to 6:00</h3>
                 <p>1201 Cotton Alley</p>
             </div>
         </section>
+    </header>
+    <!--Main-->
+    <main>
         <!--Art genre section-->
-        <section>
+        <section id="art-genres">
             <div>
                 <h3>Art genre</h3>
                 <hr>
@@ -82,7 +82,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-eye"></i>
-                        <h4>Visual comunication</h4>
+                        <h4>Visual arts</h4>
                         <p>Conceptualization and projection of visual communication objects.</p>
                     </li>
                     <li>
@@ -91,14 +91,23 @@
                         <p>Graphic-narrative art that tells stories through sequences of images</p>
                     </li>
                 </ul>
-                <button>See more</button>
+                <button class="orange-btn">See more</button>
             </div>
         </section>
         <!--Artist section-->
-        <section>
-            <div>
-
+        <section id="artists">
+            <h2>Artists</h2>
+            <hr>
+            <ul id="artists-ul">
+              <!--Dinamic content by Javascript -->
+            </ul>
+            <div id="more">
+                <a href="#artist-ul" id="more-a">
+                    More
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
             </div>
+          </div>
         </section>
     </main>
     <!--Footer-->
