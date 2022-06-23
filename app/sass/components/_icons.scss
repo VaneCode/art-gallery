@@ -1,11 +1,18 @@
-#burger-icon{
-    --fa-primary-color:var(--dark-color);
+#burger-icon {
+  --fa-primary-color: var(--dark-color);
+}
+
+#more-icon {
+  font-size: 110%;
+  margin-left: 1rem;
+
+  --fa-primary-color: var(--orange-color);
 }
 
 hr {
-    margin: 1rem auto 3rem;
-    background-color: var(--orange-color);
-    width: 2.5rem;
-    height: 1px;
-    border: none;
-  }
+  margin: 0.5rem auto 3rem;
+  background-color: var(--orange-color);
+  width: 2.5rem;
+  height: 1px;
+  border: none;
+}

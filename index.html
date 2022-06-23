@@ -36,8 +36,8 @@
                         </li>
                         <li>About us</li>
                         <li>Artists</li>
-                        <li>Collections</li>
-                        <li>Contact us</li>
+                        <li>Sponsors</li>
+                        <li>Exhibitions</li>
                     </ul>
                 </li>
             </ul>
@@ -49,7 +49,7 @@
                 <h1>EVOCATIVE ARTWORKS</h1>
                 <div class="intro-p">
                     <p>A space for the expression of the world through art.
-                     Where you can find just the art you love.
+                        Where you can find just the art you love.
                     </p>
                 </div>
                 <h3>Open daily from 9:00 to 6:00</h3>
@@ -61,8 +61,8 @@
     <main>
         <!--Art genre section-->
         <section id="art-genres">
-            <div>
-                <h3>Art genre</h3>
+            <div class="div-container">
+                <h2>Art genre</h2>
                 <hr>
                 <ul>
                     <li>
@@ -96,55 +96,58 @@
         </section>
         <!--Artist section-->
         <section id="artists">
-            <h2>Artists</h2>
-            <hr>
-            <ul id="artists-ul">
-              <!--Dinamic content by Javascript -->
-            </ul>
-            <div id="more">
-                <a href="#artist-ul" id="more-a">
-                    More
-                    <i class="fa-solid fa-angle-down"></i>
-                </a>
-            </div>
-          </div>
-        </section>
-    </main>
-    <!--Footer-->
-    <footer>
-        <!--Sponsor section-->
-        <section>
-            <div>
-                <h4>Sponsors</h4>
+            <div class="div-container">
+                <h2>Artists</h2>
                 <hr>
-                <ul>
+                <ul id="artists-ul">
+                    <!--Dinamic content by Javascript -->
+                </ul>
+                <div id="more">
+                    <a href="#artist-ul" id="more-a">
+                        MORE
+                        <i id="more-icon" class="fa-solid fa-angle-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Sponsor section-->
+        <section id="sponsors">
+            <div class="div-container">
+                <h2>Sponsors</h2>
+                <hr>
+                <ul id="sponsors-ul">
                     <li>
-                        <h4>CultureOwl</h4>
+                        <i class="fa-brands fa-cc-visa"></i>
                     </li>
                     <li>
-                        <h4>Artforbes</h4>
+                        <i class="fa-brands fa-gg"></i>
                     </li>
                     <li>
-                        <h4>RobbReport</h4>
+                        <i class="fa-brands fa-instagram"></i>
                     </li>
                     <li>
-                        <h4>ArtDeco</h4>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-buy-n-large"></i>
                     </li>
                 </ul>
             </div>
         </section>
+    </main>
+    <!--Footer-->
+    <footer>
         <!--License section-->
-        <section>
-            <div>
-                <div class="div">logo</div>
-                <div class="div">
-                    <p>2022 Creative Commons. Some Rights Reserved
-                        This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International
-                        License.</p>
-                </div>
-
+        <div class="div-container">
+            <div class="cc-logo">
+                <img src="./images/cc-black.png" alt="Creative Commons logo"/>
             </div>
-        </section>
+            <div class="license-text">
+                <p>2022 Creative Commons. Some Rights Reserved</p>
+                <p id="desp-lincense">This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International
+                    License.</p>
+            </div>
+        </div>
     </footer>
     <!--Add script files-->
     <script src="/app/js/main.js"></script>

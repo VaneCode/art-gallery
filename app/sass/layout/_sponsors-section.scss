@@ -1,0 +1,32 @@
+#sponsors {
+  background-color: var(--dark-color);
+  align-content: center;
+  color: var(--dark-grey-color);
+  text-align: center;
+}
+
+#sponsors h2 {
+  font-size: 1.8rem;
+}
+
+#sponsors .div-container {
+  padding-top: 3rem;
+}
+
+#sponsors-ul {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
+#sponsors-ul li {
+  flex-basis: 12rem;
+}
+
+#sponsors-ul i {
+  font-size: 8rem;
+}

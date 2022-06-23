@@ -1,20 +1,68 @@
-.hide-artist-li{
-    display: none;
+#artists-ul {
+  padding: 0;
 }
 
-.artist-photo-frame{
-    z-index: 0;
-    background-image: repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
-    background-position: top left, 4px 4px;
-    background-size: 1rem 1rem;
-    width: 4rem;
-    height: 4rem;
-    min-width: 4rem;
-    min-height: 4rem;
+#artists-ul li li {
+  display: flex;
+  gap: 1.5rem;
 }
 
-#artist-photo img{
-    position: relative;
-    z-index:100;
+.hide-artist-li {
+  display: none;
 }
 
+#photo-artist {
+  width: 8rem;
+  min-width: 8rem;
+  background-color: var(--color-white);
+  padding: 0.6rem 0 0.6rem;
+}
+
+#photo-artist img {
+  position: relative;
+  inset: -3.4rem 0.6rem;
+  z-index: 100;
+  object-fit: cover;
+  margin: auto;
+  width: 10rem;
+  height: 8rem;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+
+#name {
+  color: var(--dark-color);
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+#position {
+  color: var(--orange-color);
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+#deco {
+  margin: 0.5rem 0;
+  background-color: var(--grey-color);
+}
+
+#biography {
+  font-size: 0.9rem;
+  justify-self: flex-end;
+}
+
+#more {
+  flex: 1;
+  border: 0.2rem solid var(--grey-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 2rem;
+}

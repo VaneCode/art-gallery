@@ -9,7 +9,8 @@ const artists = [
         artistID: 1,
         name: 'Chidinma Abara',
         position: 'Photographic artist',
-        biography: 'Chidinma was born in 1995, she studied photography in the Royal College of Art.' +
+        biography: 'Chidinma was born in 1995, she studied' +
+            'photography in the Royal College of Art.' +
             'She specializes in contemporary photography.',
         photo: './images/artist1.jpg'
     },
@@ -57,26 +58,24 @@ const artists = [
 //------------------Generate artists section-----------------//
 function createArtistli(artist) {
     const artistLi = document.createElement('li');
-    const htmlLi = `<li>
-<div id="photo-artist">
- <div class="artist-photo-frame"></div>
- <img src="${artist.photo}" alt="${artist.name}">
- </div>
- <div id="artist-info">
- <h3>${artist.name}</h3>
- <h4>${artist.position}</h4>
- <p>${artist.biography}</p>
- </div>
- </li>`
+    const htmlLi =
+        `<li>
+        <div id="photo-artist">
+            <img src="${artist.photo}" alt="${artist.name}" />
+        </div>
+        <div class="artist-info">
+            <h3 id="name">${artist.name}</h3>
+            <h4 id="position">${artist.position}</h4>
+            <hr id="deco">
+            <p id="biography">${artist.biography}</p>
+        </div>
+    </li>`;
     artistLi.innerHTML = htmlLi;
     return artistLi;
 }
 
 artists.forEach((artist) => {
     const li = createArtistli(artist);
-    if(artist.artistID>2){
-      li.classList.add('hide-artist-li');
-    }
     artistsUl.appendChild(li);
 });
 

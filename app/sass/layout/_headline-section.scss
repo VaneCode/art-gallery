@@ -1,42 +1,42 @@
 #headline {
-    flex-direction: column;
-    background-image: url("../images/headline-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    align-items: stretch;
+  flex-direction: column;
+  background-image: url("../images/headline-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: stretch;
 }
 
 #headline h1 {
-    background-image: url('../images/h1-bg.jpg');
-    color: var(--color-white);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: var(--font-title);
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 1.5;
+  background-image: url('../images/h1-bg.jpg');
+  color: var(--color-white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 #headline h2 {
-    color: var(--orange-color);
-    text-align: left;
+  color: var(--orange-color);
+  text-align: left;
 }
 
 #headline h3 {
-    font-size: 2rem;
-    font-weight: 900;
-    font-family: var(--font-title);
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: var(--font-title);
 }
 
 .intro-p {
-    background-color: var(--white-color);
-    padding: 1.5rem;
-    max-width: 38rem;
-    border: 1px solid --grey-color;
-    font-size: 1.3rem;
-    margin: 1.5rem 0;
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  max-width: 38rem;
+  border: 1px solid --grey-color;
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
 }
 
 #headline p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }

@@ -1,71 +1,67 @@
-header{
-    width: 100%;
-    background-image: url("../images/headline-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+header {
+  width: 100%;
+  background-image: url("../images/headline-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#header-bar{
-    display: none;
+#header-bar {
+  display: none;
 }
 
-nav ul{
-    background-color: transparent;
+nav ul {
+  background-color: transparent;
 }
 
-.mobile-menu{
-    display: none;
+.mobile-menu {
+  display: none;
 }
 
 #headline {
-    flex-direction: column;
-    margin: 2rem 0;
-    align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  align-items: center;
 }
 
-#headline .div-container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2em;
-    margin-right: 2em;
+#headline .div-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-right: 2em;
 }
-
 
 #headline h1 {
-    background-image: url('../images/h1-bg.jpg');
-    color: var(--color-white);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: var(--font-title);
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 1.5;
+  background-image: url('../images/h1-bg.jpg');
+  color: var(--color-white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 #headline h2 {
-    color: var(--orange-color);
-    text-align: left;
+  color: var(--orange-color);
+  text-align: left;
 }
 
 #headline h3 {
-    font-size: 1rem;
-    font-weight: 900;
-    font-family: var(--font-title);
-    color: var(--dark-color);
-    text-align: left;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: var(--font-title);
+  color: var(--dark-grey-color);
+  text-align: left;
 }
 
 .intro-p {
-    background-color: var(--white-color);
-    padding: 1rem;
-    border: 1px solid --grey-color;
-    font-size: 1.3rem;
+  background-color: var(--white-color);
+  padding: 1rem;
+  border: 1px solid --grey-color;
+  font-size: 1.3rem;
 }
 
 #headline p {
-    font-size: 1.3rem;
-    text-align: left;
+  font-size: 1.3rem;
+  text-align: left;
 }
-
-
-

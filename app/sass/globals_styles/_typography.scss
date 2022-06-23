@@ -2,26 +2,30 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--font-title);
-    margin-top: 0;
+  font-family: var(--font-title);
+  margin-top: 0;
 }
 
 section h2 {
-    font-size: 1.8rem;
-    text-align: center;
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 a,
 a:visited,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+li {
+  display: flex;
 }
