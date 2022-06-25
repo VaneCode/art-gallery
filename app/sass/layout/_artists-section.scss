@@ -1,5 +1,12 @@
+#artists h2{
+  margin-bottom: 0.8rem;
+}
+
 #artists-ul {
-  padding: 0;
+padding: 0;
+margin-right: 1.5rem;
+margin-left: 1.5rem;
+margin-bottom: 1rem;
 }
 
 #artists-ul li li {
@@ -12,26 +19,25 @@
 }
 
 #photo-artist {
-  width: 8rem;
-  min-width: 8rem;
+  width: 10rem;
+  min-width: 10rem;
   background-color: var(--color-white);
   padding: 0.6rem 0 0.6rem;
 }
 
 .artist-photo-frame {
   z-index: 0;
-  background-image: repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
-  background-position: top left, 4px 4px;
-  background-size: 1rem 1rem;
-  width: 4rem;
-  height: 4rem;
-  min-width: 4rem;
-  min-height: 4rem;
+  background-image: url('../images/frame.png');
+  background-size: 1.5rem 1.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
 }
 
 #photo-artist img {
   position: relative;
-  inset: -3.4rem 0.6rem;
+  inset: -3.4rem 1rem;
   z-index: 100;
   object-fit: cover;
   margin: auto;
@@ -50,14 +56,13 @@
   color: var(--dark-color);
   margin-bottom: 0;
   font-size: 1.5rem;
-  color: var(--dark-grey-color);
 }
 
 #position {
   color: var(--orange-color);
   font-style: italic;
   font-size: 0.8rem;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 #deco {
@@ -68,6 +73,7 @@
 #biography {
   font-size: 0.9rem;
   justify-self: flex-end;
+  margin-top: 0.5rem;
 }
 
 #more{
@@ -75,6 +81,8 @@ flex:1;
 border: 0.2rem solid var(--grey-color);
 margin-top: 2rem;
 margin-bottom: 2rem;
+margin-right: 1.5rem;
+margin-left: 1.5rem;
 text-align: center;
 padding: 2rem;
 }

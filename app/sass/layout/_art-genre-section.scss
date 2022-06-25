@@ -9,8 +9,8 @@
   padding: 1rem;
 }
 
-#art-genres h3{
-  margin-bottom: 0;
+#art-genres h2{
+  margin-bottom: 0.8rem;
 }
 
 #art-genres ul {
@@ -49,5 +49,6 @@
 
 #art-genres p{
   flex: 2;
+  text-align: left;
 }
 
