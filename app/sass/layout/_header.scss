@@ -37,13 +37,15 @@ nav ul {
   -webkit-text-fill-color: transparent;
   font-family: var(--font-title);
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 3.5rem;
   line-height: 1.5;
 }
 
 #headline h2 {
   color: var(--orange-color);
   text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 #headline h3 {
@@ -59,6 +61,7 @@ nav ul {
   padding: 1rem;
   border: 1px solid --grey-color;
   font-size: 1.3rem;
+  align-self: center;
 }
 
 #headline p {

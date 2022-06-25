@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,9 +22,17 @@ body {
   line-height: 1.5;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .div-container {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin: 2rem 0.3rem;
   max-width: 100%;
+}
+
+section{
+  display: block;
 }
