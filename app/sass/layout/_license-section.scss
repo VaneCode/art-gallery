@@ -1,16 +1,19 @@
 footer .div-container {
-  display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
+
 .cc-logo img {
-  object-fit: cover;
   margin: auto;
   width: 10rem;
-  height: 8rem;
-  background-color: aqua;
+  height: auto;
+  flex: 2;
 }
 
 #desp-lincense {
   display: none;
+  flex: 1;
 }
