@@ -61,6 +61,7 @@ function createArtistli(artist) {
     const htmlLi =
         `<li>
         <div id="photo-artist">
+            <div class="artist-photo-frame"></div>
             <img src="${artist.photo}" alt="${artist.name}" />
         </div>
         <div class="artist-info">
@@ -76,6 +77,21 @@ function createArtistli(artist) {
 
 artists.forEach((artist) => {
     const li = createArtistli(artist);
+    if (artist.artistID > 2) {
+        li.classList.add('hide-artist-li');
+    }
     artistsUl.appendChild(li);
 });
 
+more.addEventListener('click', () => {
+    for (let i = 0; i < artistsUl.children.length; i += 1) {
+        if (i > 1) {
+            artistsUl.children[i].classList.toggle('hide-artist-li');
+        }
+    }
+    if (artistsUl.lastChild.classList.contains('hide-artist-li')) {
+        more.innerHTML = 'MORE <i class="fa-solid fa-angle-down"></i>';
+    } else {
+        more.innerHTML = 'LESS <i class="fa-solid fa-angle-up"></i>';
+    }
+});

@@ -18,6 +18,17 @@
   padding: 0.6rem 0 0.6rem;
 }
 
+.artist-photo-frame {
+  z-index: 0;
+  background-image: repeating-linear-gradient(45deg, #555 25%, transparent 25%, transparent 75%, #555 75%, #555), repeating-linear-gradient(45deg, #555 25%, #fff 25%, #fff 75%, #555 75%, #555);
+  background-position: top left, 4px 4px;
+  background-size: 1rem 1rem;
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+}
+
 #photo-artist img {
   position: relative;
   inset: -3.4rem 0.6rem;
@@ -39,6 +50,7 @@
   color: var(--dark-color);
   margin-bottom: 0;
   font-size: 1.5rem;
+  color: var(--dark-grey-color);
 }
 
 #position {
@@ -58,11 +70,11 @@
   justify-self: flex-end;
 }
 
-#more {
-  flex: 1;
-  border: 0.2rem solid var(--grey-color);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  padding: 2rem;
+#more{
+flex:1;
+border: 0.2rem solid var(--grey-color);
+margin-top: 2rem;
+margin-bottom: 2rem;
+text-align: center;
+padding: 2rem;
 }
