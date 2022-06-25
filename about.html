@@ -12,82 +12,147 @@
 
 <body>
     <!--Header-->
-    <header>
-        <div>
-            <div>
-                <Ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">My page</a></li>
-                    <li><a href="#">Logout</a></li>
-                </Ul>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" aria-label="Navigation menu icon">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <a href="index.html" id="logo"><img src="./images/LOGO.png"
-                                        alt="Evocative ArtWorks"></a>
-                            </li>
-                            <li>About us</li>
-                            <li>Artists</li>
-                            <li>Collections</li>
-                            <li>Contact us</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <header class="img-header-about">
+        <div id="header-bar">
+            <Ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">My page</a></li>
+                <li><a href="#">Logout</a></li>
+            </Ul>
         </div>
+        <nav>
+            <ul id="nav-bar">
+                <li class="nav-icon-toggle">
+                    <a href="#" aria-label="Navigation menu icon">
+                        <i id="burger-icon" class="fa-solid fa-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <ul class="mobile-menu">
+                        <li>
+                            <a href="index.html" id="logo"><img src="./images/LOGO.png" alt="Evocative ArtWorks"></a>
+                        </li>
+                        <li>About us</li>
+                        <li>Artists</li>
+                        <li>Sponsors</li>
+                        <li>Exhibitions</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Headline section-->
+        <section id="headline-about">
+            <div class="div-container">
+                <h2>"Welcome to the art!"</h2>
+                <h1>EVOCATIVE ARTWORKS EVENTS PAGE 2022</h1>
+                <div class="intro-p">
+                    <p>Evocative Artworks, is a benchmark in the art world, we work with artists of various kinds which
+                        allows us to be at the forefront and always exhibit collections with the most original and
+                        creative
+                        works of art.
+                    </p>
+                </div>
+                <div class="email">
+                    <p>Please contact us per Email for any further questions about our exhibitions!</p>
+                    <a href="#">info@evocativeartworks.com</a>
+                </div>
+            </div>
+        </section>
     </header>
     <!--Main-->
     <main>
-        <!--About us introduction-->
-        <section>
-            <div>
-                <h2>Welcome to the art</h2>
-                <h1>EVOCATIVE ARTWORKS</h1>
-                <p>Evocative Artworks, is a benchmark in the art world, we work with artists of various kinds which
-                    allows us to be at the forefront and always exhibit collections with the most original and creative
-                    works of art.</p>
+        <!--About us certification-->
+        <section id="certification">
+            <div class="div-container">
+                <h2>Endorsed art</h2>
+                <hr>
+                <p>
+                    All our artworks have their certificate of authenticity.</p>
+                <div class="authentic-certificate">
+                    <img src="./images/certificate.jpg" alt="Art certification" />
+                </div>
             </div>
         </section>
         <!--Exhibitions-->
-        <section>
+        <section id="featured-exhibitions">
             <div>
                 <h2>See our featured exhibitions</h2>
                 <hr>
+                <p>Check all our artworks.</p>
+                <ul id="exhibitions">
+                  <li>
+                    <div class="carrousel">
+                        <div class="car-contaier">
+                            <img src="#" alt='artwork'/>
+                            <img src="#" alt='artwork'/>
+                            <img src="#" alt='artwork'/>
+                            <img src="#" alt='artwork'/>
+                        </div>
+                        <ul class="points">
+                            <li>
+                                <i class="fa-solid fa-angles-right"></i>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <img src="./images/c1-img1.jpg" alt="La Aldea">
+                    <!--<div class="overlay">
+                      <h3>2022</h3>
+                      <p>Dead water</p>
+                    </div>-->
+                  </li>
+                  <li>
+                    <img src="./images/c2-img1.jpg" alt="After">
+                    <!--<div class="overlay">
+                      <h3>2021</h3>
+                      <p>Body shapes</p>
+                    </div>-->
+                  </li>
+                </ul>
 
+            </div>
+        </section>
+        <!--Sponsor section-->
+        <section id="sponsors">
+            <div class="div-container">
+                <h2>Sponsors</h2>
+                <hr>
+                <ul id="sponsors-ul">
+                    <li>
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-gg"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-buy-n-large"></i>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <!--Footer-->
     <footer>
-        <!--Partner section-->
-        <section>
-            <div>
-                <h4></h4>
-                <hr>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </section>
         <!--License section-->
-        <section>
-            <div>
-
+        <div id="license-container" class="div-container">
+            <div class="cc-logo">
+                <img src="./images/cc-black.png" alt="Creative Commons logo" />
             </div>
-        </section>
+            <div class="license-text">
+                <p>2022 Creative Commons. Some Rights Reserved.</p>
+                <p id="desp-lincense">This work is licensed under a Creative Commons Attribution-NonCommercial 4.0
+                    International
+                    License.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </body>

@@ -1,0 +1,24 @@
+#featured-exhibitions h2{
+    margin-bottom: 0.8rem;
+}
+
+.overlay {
+    position: absolute;
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(236, 82, 66, 0.8);
+    color: var(--color-white);
+    inset: 0 0;
+    width: 100%;
+    transform: scaleY(1);
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #exhibitions li:hover > .overlay {
+    transform: scaleY(0);
+  }

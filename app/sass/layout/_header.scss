@@ -1,8 +1,15 @@
 header {
   width: 100%;
-  background-image: url("../images/headline-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.img-header-index{
+  background-image: url("../images/headline-bg.png");
+}
+
+.img-header-about{
+  background-image: url("../images/about-bg.png");
 }
 
 #header-bar {
@@ -37,7 +44,7 @@ nav ul {
   -webkit-text-fill-color: transparent;
   font-family: var(--font-title);
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 1.5;
 }
 
@@ -56,15 +63,74 @@ nav ul {
   text-align: left;
 }
 
-.intro-p {
-  background-color: var(--white-color);
-  padding: 1rem;
-  border: 1px solid --grey-color;
-  font-size: 1.3rem;
-  align-self: center;
-}
-
 #headline p {
   font-size: 1.3rem;
   text-align: left;
+}
+
+#headline-about .div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#headline-about h1 {
+  color: var(--orange-color);
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#headline-about h2 {
+  color: var(--orange-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#headline-about .intro-p {
+  background-color: var(--white-color);
+  border: 1px solid -var(--white-color);
+  font-size: 1.3rem;
+  align-self: center;
+  text-align: center;
+}
+
+.email{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--dark-color);
+  margin-top: 0;
+}
+
+.email p{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.email a{
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--dark-color);
+}
+
+#certification .div-container{
+  align-items: center;
+  justify-content: center;
+}
+
+#certification h2{
+  margin-bottom: 0.8rem;
+}
+
+.authentic-certificate img{
+  margin: auto;
+  width: 20rem;
+  height: auto;
 }
