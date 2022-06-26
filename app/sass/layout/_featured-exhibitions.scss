@@ -1,5 +1,52 @@
-#featured-exhibitions h2{
+#featured-exhibitions h2 {
     margin-bottom: 0.8rem;
+}
+
+#featured-exhibitions p {
+    text-align: center;
+}
+
+.carrousel {
+    width: 90%;
+    overflow-x: hidden;
+}
+
+.carr-container {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.carrousel img {
+    max-width: 100%;
+    width: calc(100%/4);
+    height: 15rem;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.points {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.points i{
+    color: var(--dark-color);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.points .active i{
+    color: var(--orange-color);
 }
 
 .overlay {
@@ -17,8 +64,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#exhibitions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
   }
   
-  #exhibitions li:hover > .overlay {
-    transform: scaleY(0);
+  #exhibitions li {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
   }
+
+#exhibitions li:hover>.overlay {
+    transform: scaleY(0);
+}
