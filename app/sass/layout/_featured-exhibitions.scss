@@ -50,20 +50,20 @@
 }
 
 .overlay {
-    position: absolute;
-    text-align: center;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    background-color: rgba(236, 82, 66, 0.8);
-    color: var(--color-white);
-    inset: 0 0;
-    width: 100%;
-    transform: scaleY(1);
-    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    text-align: center;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-color: var(--orange-transparent);
+    color: var(--white-color);
+    inset: 0 0;
+    width: 90%;
+    transform: scaleX(1);
+    font-size: 1.5rem; 
 }
 
 #exhibitions {
@@ -80,5 +80,5 @@
   }
 
 #exhibitions li:hover>.overlay {
-    transform: scaleY(0);
+    transform: scaleX(0);
 }
