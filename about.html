@@ -13,31 +13,40 @@
 <body>
     <!--Header-->
     <header class="img-header-about">
+        <!--Navigation-->
         <div id="header-bar">
-            <Ul>
+            <ul>
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#">English</a></li>
                 <li><a href="#">My page</a></li>
                 <li><a href="#">Logout</a></li>
-            </Ul>
+            </ul>
         </div>
         <nav>
             <ul id="nav-bar">
                 <li class="nav-icon-toggle">
                     <a href="#" aria-label="Navigation menu icon">
-                        <i id="burger-icon" class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </a>
                 </li>
                 <li>
-                    <ul class="mobile-menu">
-                        <li>
+                    <ul id="mobile-menu">
+                        <li class="logo">
                             <a href="index.html" id="logo"><img src="./images/LOGO.png" alt="Evocative ArtWorks"></a>
                         </li>
-                        <li>About us</li>
-                        <li>Artists</li>
-                        <li>Sponsors</li>
-                        <li>Exhibitions</li>
+                        <li class="menu-option">
+                            <a href="about.html">About us</a>  
+                        </li>
+                        <li class="menu-option">
+                            <a href="index.html#artists">Artists</a>
+                        </li class="menu-option">
+                        <li class="menu-option">
+                           <a href="#sponsors">Sponsors</a> 
+                        </li>
+                        <li class="menu-option">
+                           <a href="#featured-exhibitions">Exhibitions</a> 
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -105,10 +114,26 @@
                     </div>
                   </li>
                   <li>
-                    <!--<div class="overlay">
+                    <div class="carrousel">
+                        <div class="carr-img">
+                            <img src="./images/c2-img1.jpg" alt='artwork'/>
+                            <img src="./images/c2-img2.jpg" alt='artwork'/>
+                            <img src="./images/c2-img3.jpg" alt='artwork'/>
+                            <img src="./images/c2-img4.jpg" alt='artwork'/>
+                        </div>
+                        <ul class="points" id="nav-icons">
+                            <li class="arrow">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </li>
+                            <li class="arrow active">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="overlay">
                       <h3>2021</h3>
                       <p>Body shapes</p>
-                    </div>-->
+                    </div>
                   </li>
                 </ul>
 
@@ -156,6 +181,7 @@
     </footer>
     <!--Add javascript files-->
     <script src="/app/js/about.js"></script>
+    <script src="/app/js/menu.js"></script>
 </body>
 </body>
 

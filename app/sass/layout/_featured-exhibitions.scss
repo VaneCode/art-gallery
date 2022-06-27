@@ -16,8 +16,15 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
+}
+
+.carr-img {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;  
 }
 
 .carrousel img {
@@ -45,7 +52,7 @@
     text-align: center;
 }
 
-.points .active i{
+.active i{
     color: var(--orange-color);
 }
 

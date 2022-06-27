@@ -1,64 +1,49 @@
 //Variables and constants declaration
 const carrContainer = document.querySelector('.carr-container');
 const points = document.querySelectorAll('.point');
+const carrImg = document.querySelector('.carr-img');
+const arrows = document.querySelectorAll('.arrow');
 let position = 0;
+let position1 = 0;
 
-//Collections
-const collection1 = [
-    {
-        pictureID: 1,
-        img: './images/c1-img1.jpg'
-    },
-    {
-        pictureID: 2,
-        img: './images/c1-img2.jpg'
-    },
-    {
-        pictureID: 3,
-        img: './images/c1-img3.jpg'
-    },
-    {
-        pictureID: 1,
-        img: './images/c1-img4.jpg'
-    }
-];
+//Function to move the div horizontally
+function moveCarr(element, pos) {
+    let calcMove = 0;
+    //Calculate the space that carrContainer will move
+    calcMove = pos * -25;
+    //Move carrContainer to show the next image
+    element.style.transform = `translateX(${calcMove}%)`;
 
-const collection2 = [
-    {
-        sculptureID: 1,
-        img: './images/c2-img1.jpg'
-    },
-    {
-        sculptureID: 2,
-        img: './images/c2-img2.jpg'
-    },
-    {
-        sculptureID: 3,
-        img: './images/c2-img3.jpg'
-    },
-    {
-        sculptureID: 4,
-        img: './images/c2-img4.jpg'
-    }
-];
+}
+
+//Function to change arrows icons styles       
+function activeArrows(points, i) {
+    points.forEach((point) => {
+        point.classList.remove('active');
+    });
+    points[i].classList.add('active');
+}
 
 points.forEach((point, i) => {
     point.addEventListener('click', () => {
-        let calcMove = 0;
         //Restart the position 
         if (position > 3) {
             position = 0;
         }
-        //Calculate the space that carrContainer will move
-        calcMove = position * -25;
-        //Increment the position
+        moveCarr(carrContainer, position);
+        activeArrows(points, i);
         position++;
-        //Move carrContainer to show the next image
-        carrContainer.style.transform = `translateX(${calcMove}%)`;
-        //Change arrows icons styles
-        points.forEach((point, i) => {
-            point.classList.remove('active');
-        });
-        points[i].classList.add('active');
+    });
+});
+
+arrows.forEach((arrow, i) => {
+    arrow.addEventListener('click', () => {
+        //Restart the position 
+        if (position1 > 3) {
+            position1 = 0;
+        }
+        moveCarr(carrImg, position1);
+        activeArrows(arrows, i);
+        position1++;
     });
 });

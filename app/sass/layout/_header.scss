@@ -16,12 +16,50 @@ header {
   display: none;
 }
 
+#header-bar ul{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
 nav ul {
   background-color: transparent;
 }
 
-.mobile-menu {
+.logo{
   display: none;
+}
+
+#mobile-menu{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  inset: 5rem 0;
+  transform: translateX(100%);
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  background-color: var(--orange-transparent);
+  width: 100%;
+  height: 100vh;
+}
+
+#mobile-menu.display-menu {
+  transform: translateX(0);
+  padding-top: 3rem;
+  color: var(--color-white);
+  font-size: 2rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  line-height: 2;
+}
+
+.menu-option a{
+  color: var(--white-color);
 }
 
 #headline {
@@ -90,6 +128,7 @@ nav ul {
   color: var(--orange-color);
   text-align: center;
   margin-bottom: 2rem;
+  background-color: var(--white-color);
 }
 
 #headline-about .intro-p {
@@ -107,6 +146,7 @@ nav ul {
   text-align: center;
   color: var(--dark-color);
   margin-top: 0;
+  background-color: var(--white-color);
 }
 
 .email p{
