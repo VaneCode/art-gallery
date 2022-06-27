@@ -16,11 +16,11 @@
         <!--Navigation-->
         <div id="header-bar">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">My page</a></li>
-                <li><a href="#">Logout</a></li>
+                <li class="header-bar-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="header-bar-icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="header-bar-link"><a href="#">English</a></li>
+                <li class="header-bar-link"><a href="#">My page</a></li>
+                <li class="header-bar-link"><a href="#">Logout</a></li>
             </ul>
         </div>
         <nav>
@@ -31,21 +31,19 @@
                     </a>
                 </li>
                 <li>
+                    <a href="index.html" id="logo"><img src="./images/LOGO.png" alt="Evocative ArtWorks"></a>
                     <ul id="mobile-menu">
-                        <li class="logo">
-                            <a href="index.html" id="logo"><img src="./images/LOGO.png" alt="Evocative ArtWorks"></a>
-                        </li>
                         <li class="menu-option">
-                            <a href="about.html">About us</a>  
+                            <a href="about.html">About us</a>
                         </li>
                         <li class="menu-option">
                             <a href="index.html#artists">Artists</a>
                         </li class="menu-option">
                         <li class="menu-option">
-                           <a href="#sponsors">Sponsors</a> 
+                            <a href="index.html#sponsors">Sponsors</a>
                         </li>
-                        <li class="menu-option">
-                           <a href="#featured-exhibitions">Exhibitions</a> 
+                        <li id="option-square" class="menu-option">
+                            <a href="#featured-exhibitions">Exhibitions</a>
                         </li>
                     </ul>
                 </li>
@@ -91,56 +89,56 @@
                 <hr>
                 <p>Check all our artworks.</p>
                 <ul id="exhibitions">
-                  <li>
-                    <div class="carrousel">
-                        <div class="carr-container">
-                            <img src="./images/c1-img1.jpg" alt='artwork'/>
-                            <img src="./images/c1-img2.jpg" alt='artwork'/>
-                            <img src="./images/c1-img3.jpg" alt='artwork'/>
-                            <img src="./images/c1-img4.jpg" alt='artwork'/>
+                    <li>
+                        <div class="carrousel">
+                            <div class="carr-container">
+                                <img src="./images/c1-img1.jpg" alt='artwork' />
+                                <img src="./images/c1-img2.jpg" alt='artwork' />
+                                <img src="./images/c1-img3.jpg" alt='artwork' />
+                                <img src="./images/c1-img4.jpg" alt='artwork' />
+                            </div>
+                            <ul class="points">
+                                <li class="point">
+                                    <i class="fa-solid fa-angles-left"></i>
+                                </li>
+                                <li class="point active">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="points">
-                            <li class="point">
-                                <i class="fa-solid fa-angles-left"></i>
-                            </li>
-                            <li class="point active">
-                                <i class="fa-solid fa-angles-right"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="overlay">
-                      <h3>2022</h3>
-                      <p>Dead water</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="carrousel">
-                        <div class="carr-img">
-                            <img src="./images/c2-img1.jpg" alt='artwork'/>
-                            <img src="./images/c2-img2.jpg" alt='artwork'/>
-                            <img src="./images/c2-img3.jpg" alt='artwork'/>
-                            <img src="./images/c2-img4.jpg" alt='artwork'/>
+                        <div class="overlay">
+                            <h3>2022</h3>
+                            <p>Dead water</p>
                         </div>
-                        <ul class="points" id="nav-icons">
-                            <li class="arrow">
-                                <i class="fa-solid fa-angles-left"></i>
-                            </li>
-                            <li class="arrow active">
-                                <i class="fa-solid fa-angles-right"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="overlay">
-                      <h3>2021</h3>
-                      <p>Body shapes</p>
-                    </div>
-                  </li>
+                    </li>
+                    <li>
+                        <div class="carrousel">
+                            <div class="carr-img">
+                                <img src="./images/c2-img1.jpg" alt='artwork' />
+                                <img src="./images/c2-img2.jpg" alt='artwork' />
+                                <img src="./images/c2-img3.jpg" alt='artwork' />
+                                <img src="./images/c2-img4.jpg" alt='artwork' />
+                            </div>
+                            <ul class="points" id="nav-icons">
+                                <li class="arrow">
+                                    <i class="fa-solid fa-angles-left"></i>
+                                </li>
+                                <li class="arrow active">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="overlay">
+                            <h3>2021</h3>
+                            <p>Body shapes</p>
+                        </div>
+                    </li>
                 </ul>
 
             </div>
         </section>
         <!--Sponsor section-->
-        <section id="sponsors">
+        <section id="sponsors" class="hide-sponsors-about">
             <div class="div-container">
                 <h2>Sponsors</h2>
                 <hr>
@@ -165,9 +163,9 @@
         </section>
     </main>
     <!--Footer-->
-    <footer>
+    <footer class="footer-about">
         <!--License section-->
-        <div id="license-container" class="div-container">
+        <div id="license-container-about" class="div-container">
             <div class="cc-logo">
                 <img src="./images/cc-black.png" alt="Creative Commons logo" />
             </div>

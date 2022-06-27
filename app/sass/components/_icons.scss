@@ -1,3 +1,9 @@
+#nav-bar .nav-icon-toggle{
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .nav-icon-toggle i {
   font-size: 2rem;
   color: var(--dark-color);

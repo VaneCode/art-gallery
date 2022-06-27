@@ -16,7 +16,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
 }
 
 .carr-img {
@@ -24,7 +24,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
 }
 
 .carrousel img {
@@ -46,13 +46,13 @@
     padding: 1em;
 }
 
-.points i{
+.points i {
     color: var(--dark-color);
     font-size: 1rem;
     text-align: center;
 }
 
-.active i{
+.active i {
     color: var(--orange-color);
 }
 
@@ -70,21 +70,27 @@
     inset: 0 0;
     width: 90%;
     transform: scaleX(1);
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
 #exhibitions {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-  }
-  
-  #exhibitions li {
+
+    @media all and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10rem;
+    }
+}
+
+#exhibitions li {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     position: relative;
-  }
+}
 
 #exhibitions li:hover>.overlay {
     transform: scaleX(0);

@@ -4,37 +4,92 @@ header {
   background-repeat: no-repeat;
 }
 
-.img-header-index{
+.img-header-index {
   background-image: url("../images/headline-bg.png");
 }
 
-.img-header-about{
+.img-header-about {
   background-image: url("../images/about-bg.png");
 }
 
 #header-bar {
   display: none;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
 }
 
-#header-bar ul{
+#header-bar ul {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: flex-end;
+  padding: 0.5rem;
+  margin-right: 5rem;
   gap: 0.5rem;
   color: var(--white-color);
-  background-color: var(--dark-color);
+}
+
+.header-bar-icon a i {
+  font-size: 1.3rem;
+}
+
+#twiter {
+  margin-right: 2rem;
+}
+
+.header-bar-link a {
+  font-size: 0.7rem;
+}
+
+nav {
+  @media all and (min-width: 768px) {
+    background-color: var(--white-color);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 0 black;
+  }
 }
 
 nav ul {
   background-color: transparent;
+
+  @media all and (min-width: 768px) {
+    background-color: var(--white-color);
+    width: 100%;
+  }
 }
 
-.logo{
+#nav-bar {
+  @media all and (min-width: 768px) {
+    padding: 0;
+    margin: 0 4rem;
+  }
+}
+
+#logo {
   display: none;
+
+  @media all and (min-width: 768px) {
+    display: block;
+  }
 }
 
-#mobile-menu{
+#logo img {
+  width: 100%;
+  height: auto;
+}
+
+#mobile-menu {
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -46,6 +101,16 @@ nav ul {
   background-color: var(--orange-transparent);
   width: 100%;
   height: 100vh;
+
+  @media all and (min-width: 768px) {
+    position: inherit;
+    flex-direction: row;
+    height: auto;
+    transform: none;
+    background-color: transparent;
+    gap: 1.2rem;
+    justify-content: flex-end;
+  }
 }
 
 #mobile-menu.display-menu {
@@ -58,119 +123,22 @@ nav ul {
   line-height: 2;
 }
 
-.menu-option a{
+.menu-option a {
   color: var(--white-color);
+
+  @media all and (min-width: 768px) {
+    color: var(--dark-grey-color);
+    font-size: 0.9rem;
+  }
 }
 
-#headline {
-  flex-direction: column;
-  margin: 2rem 0;
-  align-items: center;
-}
+@media all and (min-width: 768px){
+  #option-square {
+    border: 0.2rem solid var(--orange-color);
+    padding: 0.5rem;
+    a{
+     color: var(--orange-color);
+    }
+  }
 
-#headline .div-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-#headline h1 {
-  background-image: url('../images/h1-bg.jpg');
-  color: var(--color-white);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: var(--font-title);
-  font-weight: 900;
-  font-size: 4rem;
-  line-height: 1.5;
-}
-
-#headline h2 {
-  color: var(--orange-color);
-  text-align: left;
-  margin-top: 3rem;
-  margin-bottom: 0;
-}
-
-#headline h3 {
-  font-size: 1rem;
-  font-weight: 900;
-  font-family: var(--font-title);
-  color: var(--dark-grey-color);
-  text-align: left;
-}
-
-#headline p {
-  font-size: 1.3rem;
-  text-align: left;
-}
-
-#headline-about .div-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-#headline-about h1 {
-  color: var(--orange-color);
-  font-family: var(--font-title);
-  font-weight: 900;
-  font-size: 2rem;
-  line-height: 1.3;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-#headline-about h2 {
-  color: var(--orange-color);
-  text-align: center;
-  margin-bottom: 2rem;
-  background-color: var(--white-color);
-}
-
-#headline-about .intro-p {
-  background-color: var(--white-color);
-  border: 1px solid -var(--white-color);
-  font-size: 1.3rem;
-  align-self: center;
-  text-align: center;
-}
-
-.email{
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: var(--dark-color);
-  margin-top: 0;
-  background-color: var(--white-color);
-}
-
-.email p{
-  font-size: 1rem;
-  text-align: center;
-}
-
-.email a{
-  font-weight: 600;
-  text-decoration: underline;
-  color: var(--dark-color);
-}
-
-#certification .div-container{
-  align-items: center;
-  justify-content: center;
-}
-
-#certification h2{
-  margin-bottom: 0.8rem;
-}
-
-.authentic-certificate img{
-  margin: auto;
-  width: 20rem;
-  height: auto;
 }

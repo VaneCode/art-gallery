@@ -47,7 +47,7 @@ const artists = [
     },
     {
         artistID: 6,
-        name: 'Ana Gabriela Marin',
+        name: 'Ana Marin',
         position: 'Graphic design',
         biography: 'Ana was born in Spain in 1987. Her works are marked by a strong sense of protest' +
             'against current problems such as war and famine.',

@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+#sponsors .div-container{
+  @media all and (min-width: 768px) {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+}
+
 #sponsors h2 {
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
@@ -22,6 +29,10 @@
   gap: 0.8rem;
   align-self: center;
   margin-bottom: 3rem;
+  @media all and (min-width: 768px) {
+   flex-wrap: nowrap;
+   gap: 3rem;
+  }
 }
 
 #sponsors-ul li {
@@ -30,4 +41,13 @@
 
 #sponsors-ul i {
   font-size: 8rem;
+  @media all and (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+
+.hide-sponsors-about{
+  @media all and (min-width: 768px){
+    display: none;
+  }
 }
