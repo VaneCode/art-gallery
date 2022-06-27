@@ -5,7 +5,9 @@
   text-align: center;
 }
 
-#sponsors .div-container{
+#sponsors .div-container {
+  padding-top: 3rem;
+
   @media all and (min-width: 768px) {
     margin-left: 5em;
     margin-right: 5em;
@@ -17,10 +19,6 @@
   margin-bottom: 0.8rem;
 }
 
-#sponsors .div-container {
-  padding-top: 3rem;
-}
-
 #sponsors-ul {
   display: flex;
   flex-flow: row wrap;
@@ -29,9 +27,10 @@
   gap: 0.8rem;
   align-self: center;
   margin-bottom: 3rem;
+
   @media all and (min-width: 768px) {
-   flex-wrap: nowrap;
-   gap: 3rem;
+    flex-wrap: nowrap;
+    gap: 3rem;
   }
 }
 
@@ -41,13 +40,14 @@
 
 #sponsors-ul i {
   font-size: 8rem;
+
   @media all and (min-width: 768px) {
     font-size: 5rem;
   }
 }
 
-.hide-sponsors-about{
-  @media all and (min-width: 768px){
+.hide-sponsors-about {
+  @media all and (min-width: 768px) {
     display: none;
   }
 }

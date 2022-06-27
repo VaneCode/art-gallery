@@ -22,10 +22,6 @@ body {
   line-height: 1.5;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .div-container {
   display: flex;
   flex-direction: column;
@@ -33,6 +29,6 @@ body {
   max-width: 100%;
 }
 
-section{
+section {
   display: block;
 }

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  font-size: 0.8rem;
 
   @media all and (min-width: 768px) {
     margin: 0 5em;
@@ -21,6 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 0.8rem;
   gap: 2rem;
 
   @media all and (min-width: 768px) {
@@ -28,12 +30,11 @@
     color: var(--white-color);
     padding: 3rem;
 
-    img{
-      content:url("../images/cc-white.png");
+    img {
+      content: url("../images/cc-white.png");
     }
   }
 }
-
 
 .cc-logo img {
   margin: auto;

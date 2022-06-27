@@ -26,6 +26,15 @@ header {
   }
 }
 
+nav ul {
+  background-color: transparent;
+
+  @media all and (min-width: 768px) {
+    background-color: var(--white-color);
+    width: 100%;
+  }
+}
+
 #header-bar ul {
   display: flex;
   flex-flow: row nowrap;
@@ -57,15 +66,6 @@ nav {
     justify-content: center;
     align-items: center;
     box-shadow: 1rem 0 black;
-  }
-}
-
-nav ul {
-  background-color: transparent;
-
-  @media all and (min-width: 768px) {
-    background-color: var(--white-color);
-    width: 100%;
   }
 }
 
@@ -132,13 +132,13 @@ nav ul {
   }
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 768px) {
   #option-square {
     border: 0.2rem solid var(--orange-color);
     padding: 0.5rem;
-    a{
-     color: var(--orange-color);
+
+    a {
+      color: var(--orange-color);
     }
   }
-
 }
