@@ -1,0 +1,97 @@
+#featured-exhibitions h2 {
+  margin-bottom: 0.8rem;
+}
+
+#featured-exhibitions p {
+  text-align: center;
+}
+
+.carrousel {
+  width: 90%;
+  overflow-x: hidden;
+}
+
+.carr-container {
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carr-img {
+  width: 400%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrousel img {
+  max-width: 100%;
+  width: calc(100% / 4);
+  height: 15rem;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.points {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+}
+
+.points i {
+  color: var(--dark-color);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.active i {
+  color: var(--orange-color);
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  background-color: var(--orange-transparent);
+  color: var(--white-color);
+  inset: 0 0;
+  width: 90%;
+  transform: scaleX(1);
+  font-size: 1.5rem;
+}
+
+#exhibitions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+  }
+}
+
+#exhibitions li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+}
+
+#exhibitions li:hover > .overlay {
+  transform: scaleX(0);
+}

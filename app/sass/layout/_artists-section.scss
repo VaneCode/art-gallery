@@ -1,0 +1,114 @@
+#artists .div-container {
+  @media all and (min-width: 768px) {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+#artists h2 {
+  margin-bottom: 0.8rem;
+}
+
+#artists-ul {
+  padding: 0;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+#artists-ul li li {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hide-artist-li {
+  display: none;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+#photo-artist {
+  width: 10rem;
+  min-width: 10rem;
+  background-color: var(--color-white);
+  padding: 0.6rem 0 0.6rem;
+}
+
+.artist-photo-frame {
+  z-index: 0;
+  background-image: url('../images/frame.png');
+  background-size: 1.5rem 1.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+
+  @media all and (min-width: 768px) {
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--grey-color));
+  }
+}
+
+#photo-artist img {
+  position: relative;
+  inset: -3.4rem 1rem;
+  z-index: 100;
+  object-fit: cover;
+  margin: auto;
+  width: 10rem;
+  height: 8rem;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+
+#name {
+  color: var(--dark-color);
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+#position {
+  color: var(--orange-color);
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#deco {
+  margin: 0.5rem 0;
+  background-color: var(--grey-color);
+}
+
+#biography {
+  font-size: 0.9rem;
+  justify-self: flex-end;
+  margin-top: 0.5rem;
+}
+
+#more {
+  flex: 1;
+  border: 0.2rem solid var(--grey-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}

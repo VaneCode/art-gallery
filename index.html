@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/acbe49dba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./dist/styles.css">
+    <title>Evocative ArtWorks</title>
 </head>
+
 <body>
-    
+    <!--Header-->
+    <header class="img-header-index">
+        <!--Navigation-->
+        <div id="header-bar">
+            <ul>
+                <li class="header-bar-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="header-bar-icon" id="twiter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="header-bar-link"><a href="#">English</a></li>
+                <li class="header-bar-link"><a href="#">My page</a></li>
+                <li class="header-bar-link"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul id="nav-bar">
+                <li class="nav-icon-toggle">
+                    <a href="#" aria-label="Navigation menu icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" id="logo"><img src="./images/LOGO.png" alt="Evocative ArtWorks"></a>
+                    <ul id="mobile-menu">
+                        <li class="menu-option">
+                            <a href="about.html">About us</a>
+                        </li>
+                        <li class="menu-option">
+                            <a href="#artists">Artists</a>
+                        </li>
+                        <li class="menu-option">
+                            <a href="#sponsors">Sponsors</a>
+                        </li>
+                        <li id="option-square" class="menu-option">
+                            <a href="about.html#featured-exhibitions">Exhibitions</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Headline section-->
+        <section id="headline">
+            <div class="div-container">
+                <h2>"Welcome to the art!"</h2>
+                <h1>EVOCATIVE ARTWORKS EVENTS PAGE 2022</h1>
+                <div class="intro-p">
+                    <p>A free space, a blank canvas where you can express your mind, your body and your spirit through
+                        art.
+                        Where you can find just the art you love.
+                    </p>
+                </div>
+                <h3>Open daily from 9:00 to 6:00</h3>
+                <p>1201 Cotton Alley</p>
+            </div>
+        </section>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Art genre section-->
+        <section id="art-genres">
+            <div class="div-container">
+                <h2>Art genres</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-camera"></i>
+                        <h4>Photography</h4>
+                        <p>Images of conceptual and aesthetic value with the photographic camera.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <h4>Sculpture</h4>
+                        <p>Relief, round sculpture and kinetic sculpture.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-palette"></i>
+                        <h4>Painting</h4>
+                        <p>Combines elements of plastic representation to convey an aesthetic experience.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-eye"></i>
+                        <h4>Visual arts</h4>
+                        <p>Conceptualization and projection of visual communication objects.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book"></i>
+                        <h4>Cartoon</h4>
+                        <p>Graphic-narrative art that tells stories through sequences of images</p>
+                    </li>
+                </ul>
+                <button class="orange-btn" type="button">Learn more</button>
+            </div>
+        </section>
+        <!--Artist section-->
+        <section id="artists">
+            <div class="div-container">
+                <h2>Artists</h2>
+                <hr>
+                <ul id="artists-ul">
+                    <!--Dinamic content by Javascript -->
+                </ul>
+                <div id="more">
+                    MORE
+                    <i id="more-icon" class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+        </section>
+        <!--Sponsor section-->
+        <section id="sponsors">
+            <div class="div-container">
+                <h2>Sponsors</h2>
+                <hr>
+                <ul id="sponsors-ul">
+                    <li>
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-gg"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-buy-n-large"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <!--License section-->
+        <div id="license-container-index" class="div-container">
+            <div class="cc-logo">
+                <img src="./images/cc-black.png" alt="Creative Commons logo" />
+            </div>
+            <div class="license-text">
+                <p>2022 Creative Commons. Some Rights Reserved.</p>
+                <p id="desp-lincense">This work is licensed under a Creative Commons Attribution-NonCommercial 4.0
+                    International
+                    License.</p>
+            </div>
+        </div>
+    </footer>
+    <!--Add script files-->
+    <script src="./app/js/main.js"></script>
+    <script src="./app/js/menu.js"></script>
 </body>
+
 </html>

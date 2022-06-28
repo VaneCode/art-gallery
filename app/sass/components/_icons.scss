@@ -1,0 +1,24 @@
+#nav-bar .nav-icon-toggle {
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-icon-toggle i {
+  font-size: 2rem;
+  color: var(--dark-color);
+}
+
+#more-icon {
+  font-size: 110%;
+  margin-left: 1rem;
+  color: var(--orange-color);
+}
+
+hr {
+  margin: 0 auto 1rem;
+  background-color: var(--orange-color);
+  width: 2.5rem;
+  height: 1px;
+  border: none;
+}
