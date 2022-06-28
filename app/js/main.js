@@ -73,13 +73,15 @@ function createArtistli(artist) {
   return artistLi;
 }
 
-artists.forEach((artist) => {
-  const li = createArtistli(artist);
-  if (artist.artistID > 2) {
-    li.classList.add('hide-artist-li');
-  }
-  artistsUl.appendChild(li);
-});
+window.onload = () => {
+  artists.forEach((artist) => {
+    const li = createArtistli(artist);
+    if (artist.artistID > 2) {
+      li.classList.add('hide-artist-li');
+    }
+    artistsUl.appendChild(li);
+  });
+}
 
 more.addEventListener('click', () => {
   for (let i = 0; i < artistsUl.children.length; i += 1) {
