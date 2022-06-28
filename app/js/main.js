@@ -81,7 +81,7 @@ window.onload = () => {
     }
     artistsUl.appendChild(li);
   });
-}
+};
 
 more.addEventListener('click', () => {
   for (let i = 0; i < artistsUl.children.length; i += 1) {
