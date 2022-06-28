@@ -3,7 +3,7 @@
 # Evocativ Artworks web page
 
 > This is a project that contains a web page of the gallery Evocative Artworks, its information and,
-featured exhibitions. Take a deeper insight project's features with this [video] (https://www.loom.com/share/40e2adc604d04ab0beb013773010fa69). 
+featured exhibitions. Take a deeper insight project's features with this [video](https://www.loom.com/share/40e2adc604d04ab0beb013773010fa69). 
 
 ## Built With
 
